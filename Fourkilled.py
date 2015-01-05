@@ -1,33 +1,34 @@
-About_Fourkilled= "    4killed is a Brain Training Game that deals with a set of 4 numbers ranging\
- \nfrom one to nine. These 4 numbers are unique i.e no number is repeated in these\
- \nfour numbers. The  aim of this game is for the player to guess these four\
- \nnumbers exactly as they are in value and position(1st,2nd,3rd and 4th) from the\
- \nleft. Each number in the players guess is taken and compared with these four\
-\nunique numbers and then a result is returned; The player keeps guessing\
- \nuntil he gets these numbers exactly as they are in value and in position. The\
- \nresults are returned in terms of killed(k),injured(i) and none(n).\
-      \n    A number in the player's guess is said to be killed if that number is equivalent\
-\nto that in the unique numbers in value and in position; Also a number is said to be \
-\ninjured if in the unique numbers, there is such a value but not in the same position\
-\nas guessed by the player; And a number is said to be none if there is no such value\
-\nin the unique numbers. for example\
-  \n    unique_number= 6758\
-  \n    players_guess= 5762\
-  \n    result would be 1k2i1n\
-  \n      The game is over once the player guesses the unique numbers\
-\ncorrectly of course in value and in position\
-  \n        In other words the aim of this game is for the player to hit a 4killed!!\
-\nNOTE::::::\
-\nonly the results will be returned there shall be no hint of to which of the numbers\
-\nis killed, injured or none.\
-\nTo quit game while running enter quit in capital letters\
-\n\
-\nENJOY!!!\
-\nENJOY!!!\
-\nENJOY!!!\
-\nENJOY!!!\
-\n\
-\n"
+'''       
+        4killed is a Brain Training Game that deals with a set of 4 numbers ranging
+from one to nine. These 4 numbers are unique i.e no number is repeated in these
+four numbers. The  aim of this game is for the player to guess these four
+numbers exactly as they are in value and position(1st,2nd,3rd and 4th) from the
+left. Each number in the players guess is taken and compared with these four
+unique numbers and then a result is returned; The player keeps guessing
+until he gets these numbers exactly as they are in value and in position. The
+results are returned in terms of killed(k),injured(i) and none(n).
+        A number in the player's guess is said to be killed if that number is equivalent
+to that in the unique numbers in value and in position; Also a number is said to be 
+injured if in the unique numbers, there is such a value but not in the same position
+as guessed by the player; And a number is said to be none if there is no such value
+in the unique numbers. for example
+        unique_number= 6758
+        players_guess= 5762
+        result would be 1k2i1n
+        The game is over once the player guesses the unique numbers
+correctly of course in value and in position
+        In other words the aim of this game is for the player to hit a 4killed!!
+NOTE::::::
+only the results will be returned there shall be no hint of to which of the numbers
+is killed, injured or none.
+To quit game while running enter quit in capital letters
+ENJOY!!!
+ENJOY!!!
+ENJOY!!!
+ENJOY!!!
+
+
+'''
 
 
 
@@ -167,7 +168,7 @@ def app():
             
             
 def main():
-    print About_Fourkilled
+    print __doc__
     x= 'Y'
     while x !='N':
         app()
